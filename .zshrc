@@ -28,3 +28,6 @@ export SDKMAN_DIR="/home/reza/.sdkman"
 # RBENV
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# GVM
+[[ -s "/home/reza/.gvm/scripts/gvm" ]] && source "/home/reza/.gvm/scripts/gvm"

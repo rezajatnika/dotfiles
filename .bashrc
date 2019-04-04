@@ -120,6 +120,9 @@ if [ -f ~/.dir_colors/dircolors ]
     then eval `dircolors ~/.dir_colors/dircolors`
 fi
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/reza/.sdkman"
 [[ -s "/home/reza/.sdkman/bin/sdkman-init.sh" ]] && source "/home/reza/.sdkman/bin/sdkman-init.sh"
+
+# GVM
+[[ -s "/home/reza/.gvm/scripts/gvm" ]] && source "/home/reza/.gvm/scripts/gvm"
