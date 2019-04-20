@@ -12,9 +12,10 @@ antigen bundle command-not-found
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
 
 # Load the theme.
-antigen theme lambda
+antigen theme ys2
 
 # Tell Antigen that you're done.
 antigen apply
@@ -31,3 +32,11 @@ eval "$(rbenv init -)"
 
 # GVM
 [[ -s "/home/reza/.gvm/scripts/gvm" ]] && source "/home/reza/.gvm/scripts/gvm"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# NVIM nightly
+alias nv="/opt/nvim-linux64/bin/nvim"
